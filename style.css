@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
+body {
+    background-image: url('images/interior.png');
+}
+
 :root{
     --golden : gray;
 }
@@ -82,3 +86,21 @@
     font-size: 0.9rem;
   
 }
+.content .c-image {
+    /* Existing styles */
+    width: 1000px;
+    height: 300px;
+    border-radius: 5px;
+  }
+  
+  .content .c-image img {
+    /* Existing styles */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease; /* Added transition for smooth zoom */
+  }
+  
+  .content .c-image:hover img {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+  }
+  
